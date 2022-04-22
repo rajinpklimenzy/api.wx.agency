@@ -22,6 +22,10 @@ class KirimController extends Controller
         $contacts = Kirim::all();
         return view('Gx.Kirim.list',compact('contacts'));
     }
+    public function getKirimContacts()
+    {
+        return $contacts = Kirim::all();
+    }
 
 
 

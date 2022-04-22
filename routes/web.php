@@ -27,5 +27,5 @@ Route::get('gx/hub-spot', [App\Http\Controllers\Gx\HubspotController::class, 'in
 Route::get('gx/kirim', [App\Http\Controllers\Gx\KirimController::class, 'index'])->name('gx.kirim');
 Route::get('gx/kirim/sync', [App\Http\Controllers\Gx\KirimController::class, 'sync'])->name('gx.kirim.sync');
 Route::get('gx/kirim/email/delete/{email}', [App\Http\Controllers\Gx\KirimController::class,'destroy'])->name('gx.kirim.email.delete');
-
+Route::get('gx/kirim/contacts', [App\Http\Controllers\Gx\KirimController::class,'getKirimContacts'])->name('gx.getKirimContacts');
 /* GX -end */

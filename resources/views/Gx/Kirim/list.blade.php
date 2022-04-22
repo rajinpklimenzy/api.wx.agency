@@ -28,7 +28,7 @@
             <div class="content-body">
                 <div class="row mb-1 mt-1 mt-md-0">
                     <div class="col-12">
-                        <a href="#" class="btn btn-primary"><i class="fa fa-sync"></i> Sync Kirim</a> Last-updated at : 12-04-2022
+                        <a href="#" class="btn btn-primary" id="kirim_sync"><i class="fa fa-sync"></i> Sync Kirim</a> Last-updated at : 12-04-2022
                     </div>
                 </div>
                 <div class="card">
@@ -81,4 +81,32 @@
 
 
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+
+                $('#kirim_sync').on('click',function(){
+
+                    $.ajax({
+                            url: {{route('gx.getKirimContacts')}},
+                            type: 'GET',
+                            data: {
+                                'id':12
+                            },
+                            beforeSend: function() {
+                            },
+                            complete: function() {
+                            },
+                            success: function(data) {
+                                console.log(data);
+                            },
+                            error: function(e) {
+                                console.log(e.message);
+                            }
+                    });
+
+                });
+
+        });
+    </script>
     @endsection

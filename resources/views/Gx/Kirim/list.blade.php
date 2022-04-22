@@ -88,7 +88,7 @@
                 $('#kirim_sync').on('click',function(){
 
                     $.ajax({
-                            url: {{route('gx.getKirimContacts')}},
+                            url: "",
                             type: 'GET',
                             data: {
                                 'id':12

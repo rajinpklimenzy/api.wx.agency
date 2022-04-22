@@ -33,8 +33,7 @@ class KirimController extends Controller
 
     public function sync()
     {
-            $a = Artisan::call('kirim:sync');
-            dd($a);
+
     }
 
     /**

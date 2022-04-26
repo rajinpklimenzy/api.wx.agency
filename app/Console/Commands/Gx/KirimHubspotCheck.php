@@ -1,9 +1,9 @@
 <?php
 
-namespace app\Console\Commands\Gx;
+namespace App\Console\Commands\Gx;
 
 use Illuminate\Console\Command;
-use app\Service\Gx\kirimService;
+use App\Service\Gx\kirimService;
 use Session;
 
 
@@ -46,7 +46,7 @@ class KirimHubspotCheck extends Command
         $lists = $kirim->getKirimList();
         foreach($kirim->getKirimList() as $list)
         {
-            $list = $lists[6];
+
 
                 Session::put('offset',0);
                 while(Session::get('offset')!=-1)
@@ -128,7 +128,7 @@ class KirimHubspotCheck extends Command
                     }
 
                 }
-                dd("successfully deleted");
+
 
             }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace app\Console\Commands\Gx;
+namespace App\Console\Commands\Gx;
 
 use Illuminate\Console\Command;
-use app\Models\Gx\Kirim;
-use app\Service\Gx\kirimService;
+use App\Models\Gx\Kirim;
+use App\Service\Gx\kirimService;
 
 use Session;
 

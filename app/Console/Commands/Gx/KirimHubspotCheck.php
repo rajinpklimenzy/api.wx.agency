@@ -3,7 +3,7 @@
 namespace App\Console\Commands\Gx;
 
 use Illuminate\Console\Command;
-use App\Service\Gx\kirimService;
+use app\Service\Gx\kirimService;
 use Session;
 
 
@@ -43,8 +43,10 @@ class KirimHubspotCheck extends Command
 
         $bar = $this->output->createProgressBar($kirim->getKirimListCount());
         $bar->start();
+        $lists = $kirim->getKirimList();
         foreach($kirim->getKirimList() as $list)
         {
+            $list = $lists[6];
 
                 Session::put('offset',0);
                 while(Session::get('offset')!=-1)
@@ -116,8 +118,8 @@ class KirimHubspotCheck extends Command
                                     if($json['properties']['unsubscribe_from_kirim']['value']=='true')
                                     {
 
-                                       // echo $jsons['email']; echo PHP_EOL;
-                                        //$kirim->deleteEmail($jsons['email']);
+                                        //echo $jsons['email']; echo PHP_EOL;
+                                        $kirim->deleteEmail($jsons['email']);
 
                                     }
                                 }
@@ -126,6 +128,7 @@ class KirimHubspotCheck extends Command
                     }
 
                 }
+                dd("successfully deleted");
 
             }
 

@@ -4,7 +4,7 @@ namespace App\Console\Commands\Gx;
 
 use Illuminate\Console\Command;
 use App\Models\Gx\Kirim;
-use App\Service\Gx\kirimService;
+use app\Service\Gx\kirimService;
 
 
 class HubSpotCheck extends Command

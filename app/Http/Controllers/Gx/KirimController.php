@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Gx;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Gx\Kirim;
-use App\Service\Gx\kirimService;
+use app\Service\Gx\kirimService;
 
 use Artisan;
 use Session;

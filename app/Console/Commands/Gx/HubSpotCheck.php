@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Console\Commands\Gx;
+namespace app\Console\Commands\Gx;
 
 use Illuminate\Console\Command;
-use App\Models\Gx\Kirim;
+use app\Models\Gx\Kirim;
 use app\Service\Gx\kirimService;
 
 

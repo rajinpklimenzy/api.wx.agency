@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\Gx;
+namespace app\Service\Gx;
 interface GxInterface
 {
     public function getKirimList();

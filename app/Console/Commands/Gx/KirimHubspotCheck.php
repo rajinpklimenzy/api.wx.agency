@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands\Gx;
+namespace app\Console\Commands\Gx;
 
 use Illuminate\Console\Command;
 use app\Service\Gx\kirimService;

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Gx;
+namespace app\Http\Controllers\Gx;
 
-use App\Http\Controllers\Controller;
+use app\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class HubspotController extends Controller

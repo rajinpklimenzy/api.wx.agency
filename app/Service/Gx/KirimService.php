@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service\Gx;
+namespace app\Service\Gx;
 
 class kirimService implements GxInterface
 {
